@@ -1,0 +1,59 @@
+﻿@{
+        WebImage image = null;
+        WebImage thumbnailImage = null;
+        var imageFileName = "";
+        if(IsPost)
+        {
+            // Validation 
+            if (image==null) { 
+                ModelState.AddError("imageUpload", "Please choose file image to upload."); 
+            } 
+
+            image = WebImage.GetImageFromRequest();
+            if(image != null)
+            {
+                imageFileName = Guid.NewGuid().ToString() + "_" +
+                Path.GetFileName(image.FileName);
+                image.Save(@"~\admin88\images\" + imageFileName);
+
+                thumbnailImage = image.Resize(width: 120,height:120,preserveAspectRatio: true);
+                thumbnailImage.Save(@"~\admin88\images\thumb_" + imageFileName);
+            }
+        }
+}
+
+
+<form method="post" enctype="multipart/form-data"> 
+    <div class="toolbar">
+        <input class="btn" type="submit" tabindex="5" value="Upload" /> 
+    </div>
+    <div class="form-title">Upload Image</div>
+    <div class="form">
+        <table>
+            <tr>
+                <td>
+                    @Html.Label("Image to upload:", "imageUpload")
+                    <input type="file" name="imageUpload" /> 
+                </td>
+                <td>@Html.ValidationMessage("imageUpload")</td>
+            </tr>
+            <tr>
+                <td>
+                    @if(imageFileName != "")
+                        {
+                        <span>Original Image</span><br>
+                        <img src="~/admin88/images/@imageFileName" width="300px" alt="Original Images" />
+                        }       
+                </td>
+                <td valign="top">
+                    @if(imageFileName != "")
+                        {
+                        <span>Thumbnail Image</span><br>
+                        <img src="~/admin88/images/thumb_@(imageFileName)" width="120px" alt="Thumbnail Images" />
+                        }
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+</form>
