@@ -1,0 +1,111 @@
+input[type="button"], input[type="submit"], input[type="reset"] {
+background: #c0a063;
+color: #fff;
+font-size: 15px;
+padding: 8px 20px;
+border: none;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+margin-right: 4px;
+}
+select {
+font-size: 13px;
+border: 1px solid #cfcfcf;
+color: #5d5d5d;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+outline: none;
+padding: 4px 6px;
+}
+input[type="text"], input[type="password"], input[type="date"] {
+font-size: 13px;
+border: 1px solid #cfcfcf;
+color: #5d5d5d;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+outline: none;
+padding: 4px 6px;
+}
+table{
+    border-collapse: collapse;
+}
+.col2{
+-webkit-box-shadow: 1px 2px 9px 0px rgba(163,163,163,1);
+-moz-box-shadow: 1px 2px 9px 0px rgba(163,163,163,1);
+box-shadow: 1px 2px 9px 0px rgba(163,163,163,1);
+margin-bottom: 40px;
+}
+.content {
+}
+table.bordered tr td,table.bordered tr th{
+    border: 1px solid #dedede;
+    padding: 0 5px;
+}
+table.joblist tr{height: 45px;}
+table.joblist tr td a:link{cursor:pointer;color: #291670;}
+table.joblist tr td a:hover{color: #c0a063;}
+table.bordered tr td{font-size: small;}
+.bordered tr th{color: #c0a063; }
+table.bordered{
+    width: 100%;
+}
+a:link {
+color: #5d5d5d;
+text-decoration: none;
+}
+a:hover{
+ color: #c0a063;   
+}
+@media (min-width: 1200px) {
+    body {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+    }
+}
+.account-summary, .account-summary a:link{
+    color: #dedede;
+}
+.account-summary a:hover{
+    color: #c0a063;
+}
+
+.job-desc{
+    width: 100%;
+}
+.job-desc tr td{}
+.spec-tbl {
+margin: 0 auto;
+width: 95%;
+line-height: 27px;
+margin-top: 20px;
+border-collapse: separate;
+border-radius: 2px;
+border-spacing: 0;
+border: 1px solid #dbdbdb;
+}
+table.job-detail{
+    border: 1px solid #dbdbdb;
+}
+table.job-detail th {
+font-weight: bold;
+color: #fff;
+width: 120px;
+border-top: 1px solid #dbdbdb;
+background: #c0a063;
+}
+table.job-detail td {
+padding-left: 8px;
+border-top: 1px solid #dbdbdb;
+}
+.section-head{
+color: #fff;
+border-bottom: 1px solid #dbdbdb;
+background: #c0a063;
+padding-left: 10px;
+}
+table.job-contact tr td, table.job-contact tr th{
+    text-align: left;
+}

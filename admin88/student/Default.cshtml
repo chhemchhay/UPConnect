@@ -2,6 +2,9 @@
     Layout="~/shared/layout/_studentlayout.cshtml";
     Page.Title="Admin Page";
 }
+@section head{
+    <link href="~/admin88/css/student-style.css" rel="stylesheet"/>
+}
 @section menu{
     <ul id="simple-menu">
         <li><a href="~/admin88/student/default.cshtml" class="current"><span>Dashboard</span></a></li>                
@@ -10,9 +13,9 @@
         <li><a href="~/admin88/student/support.cshtml"><span>Support</span></a></li>	  				
     </ul>
 }
-<table border="0" style="margin-top: -3px">
+<table border="0" style="margin-top: -3px;width: 100%">
     <tr>
-        <td>
+        <td style="width: 640px;">
         <div>
         <div id="header-title">Search Job</div>
         <div id="box">
@@ -22,7 +25,7 @@
             <option value="mercedes">IT / Design</option>
             <option value="audi">Marketing</option>
         </select>
-            <input id="Text1" type="text" style="height:35px;width:168px;margin-right:10px;"/><input id="Submit1" type="submit" value="submit" />
+            <input id="Text1" type="text" style="height:25px;width:168px;margin-right:10px;"/><input id="Submit1" type="submit" value="submit" />
         </div>
     </div></td>
         <td rowspan="2" valign="top">
@@ -33,7 +36,7 @@
                     <a href="favorite.cshtml"><span id="title" style="float: right;color: red;">More...</span></a>
                 </div>
             </div>
-                <div style="background-color: white;height: 250px;border: 1px solid #b1d2e4;border-top: none;padding: 0px;margin: 0;overflow: auto;">
+                <div style="background-color: white;border: 1px solid #b1d2e4;border-top: none;padding: 0px;margin: 0;overflow: auto;">
                 
                     <ul style="margin-left: -20px;">
                         <li style="line-height: 20px;
@@ -110,21 +113,75 @@
         <div id="header-title">
             <div>Latest Job Announcement</div>
         </div>
-        <div id="box" style="padding: 0;">
-            <div class="job-post">
-                <div class="job-head">
-                    <div class="job-title">
-                        <a href="#">Academic Officer</a>
-                    </div>
-                    <div class="job-tool">
-                        <span class="t-apply">Apply</span><span class="t-favor">Add to Favorite</span>
-                    </div>
-                </div>
-                <div class="job-desc">
-                    University of Puthisastra (UP) is a leading university that is strongly committed to developing higher education in Cambodia. 
-                    Through its core values, UP is helping students realize their full potential to become the leaders of tomorrow. Are you looking 
-                    for a sustainable job?Would you like to work for an organization where employee's capacity is recognized and appreciated? 
-                    University of Puthisastra is looking for qualified applicants to fill in the following positions
+        <div id="content" style="padding: 5px;">
+<table class="bordered joblist">
+  <tr>
+    <th scope="col" style="width: 200px;">Jobs</th>
+    <th scope="col">Company</th>
+    <th scope="col" style="width: 100px;">Location</th>
+    <th scope="col" style="width: 100px;">Closing Date</th>
+  </tr>
+  <tr>
+    <td><a href="job-description">Actuarial Assistant</a></td>
+    <td><a href="#">Prudential (Cambodia) Life Assurance Plc.</a></td>
+    <td>Phnom Penh</td>
+    <td>12 April 2014</td>
+  </tr>
+  <tr>
+    <td>Actuarial Assistant</td>
+    <td>Prudential (Cambodia) Life Assurance Plc.</td>
+    <td>Phnom Penh</td>
+    <td>12 April 2014</td>
+  </tr>
+  <tr>
+    <td>Actuarial Assistant</td>
+    <td>Prudential (Cambodia) Life Assurance Plc.</td>
+    <td>Phnom Penh</td>
+    <td>12 April 2014</td>
+  </tr>
+  <tr>
+    <td>Actuarial Assistant</td>
+    <td>Prudential (Cambodia) Life Assurance Plc.</td>
+    <td>Phnom Penh</td>
+    <td>12 April 2014</td>
+  </tr>
+  <tr>
+    <td>Actuarial Assistant</td>
+    <td>Prudential (Cambodia) Life Assurance Plc.</td>
+    <td>Phnom Penh</td>
+    <td>12 April 2014</td>
+  </tr>
+  <tr>
+    <td>Actuarial Assistant</td>
+    <td>Prudential (Cambodia) Life Assurance Plc.</td>
+    <td>Phnom Penh</td>
+    <td>12 April 2014</td>
+  </tr>
+  <tr>
+    <td>Actuarial Assistant</td>
+    <td>Prudential (Cambodia) Life Assurance Plc.</td>
+    <td>Phnom Penh</td>
+    <td>12 April 2014</td>
+  </tr>
+  <tr>
+    <td>Actuarial Assistant</td>
+    <td>Prudential (Cambodia) Life Assurance Plc.</td>
+    <td>Phnom Penh</td>
+    <td>12 April 2014</td>
+  </tr>
+  <tr>
+    <td>Actuarial Assistant</td>
+    <td>Prudential (Cambodia) Life Assurance Plc.</td>
+    <td>Phnom Penh</td>
+    <td>12 April 2014</td>
+  </tr>
+  <tr>
+    <td>Actuarial Assistant</td>
+    <td>Prudential (Cambodia) Life Assurance Plc.</td>
+    <td>Phnom Penh</td>
+    <td>12 April 2014</td>
+  </tr>
+</table>
                 </div>
             </div>
             </div>

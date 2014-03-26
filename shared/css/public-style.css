@@ -1,6 +1,6 @@
 body {
   font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.72222;
   color: #666;
   margin: 0;
@@ -18,7 +18,7 @@ body {
         position: relative;
         margin: 0 auto;
     }
-    .content-body{height: 470px;}
+    /*.content-body{height: 470px;}*/
 
     .header .content
     {
@@ -34,7 +34,7 @@ body {
         margin: 0 auto;
         
     }
-    .content-body{height: 570px;}
+    /*.content-body{height: 570px;}*/
 
     .header .content
     {
@@ -49,7 +49,7 @@ body {
         position: relative;
         margin: 0 auto;
     }
-    .content-body{height: 770px;}
+    /*.content-body{height: 770px;}*/
 
     .header .content
     {
@@ -89,3 +89,33 @@ body {
     vertical-align: top;
     text-shadow: 5px #fff;
 }
+
+/* KAKADA CSS*/
+#footer{
+    width: 250px;
+    margin: 0 auto;
+}
+h1,h2,h3,h4,h5{
+    color: #27176f ;margin: 0 5px;
+}
+.contenttext{
+    padding: 20px;
+}
+.whitestyle {
+    position: relative;
+    background: white;
+    border: 1px solid #dedede;
+    -webkit-border-radius: 3px;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 10px;
+    z-index: 999;
+    margin: 0 0 15px 0;
+    clear: both;
+    box-shadow: 0 0 2px 0 #d3d3d3;
+}
+#copyright{
+    font-size: 12px;
+}
+
+
