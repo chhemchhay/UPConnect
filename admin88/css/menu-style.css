@@ -1,0 +1,95 @@
+
+.nav-top-menu
+{    
+    height:35px;
+    line-height:35px;
+    /*border-top:solid 2px #0072BC;
+    border-bottom:solid 2px #0072BC;*/
+    background:url(/admin88/images/nav-bg-gold.png) left bottom repeat-x;
+}
+
+ul#simple-menu{
+	list-style-type:none;
+	position:relative;
+	height:30px;
+	font-family:"Trebuchet MS",Arial,sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	margin:0;
+	padding:3px 0 0 15px;
+	}
+
+ul#simple-menu li{
+	display:block;
+	float:left;
+	margin:0 0 0 4px;
+	height:30px;
+	}
+
+ul#simple-menu li.left{
+	margin:0;
+	}
+
+ul#simple-menu li a{
+	display:block;
+	float:left;
+	color:#fff;
+	background:#291670;
+	line-height:27px;
+	text-decoration:none;
+	padding:0 17px 0 18px;
+	height:30px;
+	
+	-webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	
+	}
+
+ul#simple-menu li a.right{
+	padding-right:19px;
+	}
+
+ul#simple-menu li a:hover{
+	background:#d7b570;
+	}
+
+ul#simple-menu li a.current{
+	color:#fff;
+	background:#d7b570;
+	}
+
+ul#simple-menu li a.current:hover{
+	color:#2E4560;
+	background:#d7b570;
+	}
+
+#logout-icon
+{
+    width:30px;
+    height:30px;
+    margin-left:5px;
+    float:right;
+    background:#291670 url(/admin88/images/Log_Off.png) no-repeat;   
+}
+
+#change-pwd-icon
+{
+   width:30px;
+   height:30px;
+   margin-left:5px;
+   float:right;
+   background:#291670 url(/admin88/images/change-pwd.png) no-repeat;    
+}
+
+/*menu body float*/
+#left-menu{
+    float:left;
+}
+#right-menu{
+    float:right;
+    margin:1px 20px 0 0;
+}

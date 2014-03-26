@@ -1,0 +1,15 @@
+﻿@{ 
+    Layout = "~/Shared/Layout/_studentlayout.cshtml"; 
+    Page.Title = "Logout"; 
+} 
+@section menu{
+    <ul id="simple-menu">
+        <li><a href="~/admin88/student/default.cshtml"><span>Dashboard</span></a></li>                
+        <li><a href="~/admin88/student/profile.cshtml"><span>Profile</span></a></li>
+        <li><a href="~/admin88/student/companylists.cshtml"><span>Company</span></a></li>
+        <li><a href="~/admin88/student/support.cshtml"><span>Support</span></a></li>	 				
+    </ul>
+}
+<h1>Log Out</h1> 
+<p>You have been logged out from the site.</p> 
+<p><a href="@Href("~/Default")">Return to home page</a></p> 

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+        <title>Welcome to - @Page.Title</title>
+        <link href="@Href("~/shared/css/public-style.css")" rel="stylesheet"/>
+        <link href="@Href("~/shared/css/public-menu-style.css")" rel="stylesheet"/>
+        <link rel="shortcut icon" href="~/shared/images/favicon.ico">
+        @RenderSection("head",required:false)
+  </head>
+  <body>
+	<div id="wrapper">
+        <div class="header" >       
+            <div class="content">
+                <img alt="logo" src="~/shared/images/up-connect-logo.png" class="logo"/>            
+                <div class="account-summary">
+                </div>
+            </div>
+        </div>
+        <div class="nav-top-menu">
+            <div class="content">   
+                <div id="left-menu">
+                  @RenderSection("menu")
+                </div>
+                @*<div id="right-menu">
+                    <a href="login.html" title="Logout"><div id="logout-icon"></div></a>                
+                    <a href="login.html" title="Change Password"><div id="change-pwd-icon"></div></a>
+                </div>*@
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-body">
+                @RenderBody()   
+            </div>
+        </div>    
+        <div class="footer">
+            <div class="content" id="footer-content">
+                <img alt="logo" src="~/shared/images/up-power-by-logo.png" width="25px" />
+                <span id="copyright">Copyright 2014 University of Puthisastra</span>
+            </div>
+        </div>             
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,67 @@
+﻿@{
+    var email = ""; 
+    var password = ""; 
+    var password1 = "";
+    if(IsPost) 
+    { 
+        email = Request["email"]; 
+        password = Request["password"]; 
+        password1 = Request["password1"]; 
+        // Validation 
+        if (email.IsEmpty()) { 
+            ModelState.AddError("email", "Email Address is required."); 
+        } 
+        if (!@Validations.IsValidEmail(email)) 
+        { 
+            ModelState.AddError("email", "Invalid Email Address."); 
+        } 
+        if (password.IsEmpty()) { 
+            ModelState.AddError("password", "Password is required."); 
+        } 
+
+        if (password1.IsEmpty()) { 
+            ModelState.AddError("password1", "Password is required."); 
+        } 
+        
+        if(password != password1) 
+        { 
+            ModelState.AddError("password", "The passwords do not match."); 
+        } 
+        
+    } 
+}
+<form method="post"> 
+    <div class="toolbar">
+        <input class="btn" type="submit" tabindex="5" value="Register" /> 
+    </div>
+    <div class="form-title">Register New Account</div>
+    <div class="form">
+        <table>
+            <tr>
+                <td>@Html.Label("Email Address: ", "email")</td>
+                <td>@Html.TextBox("email", email,new{placeholder="email@google.com"}) </td>
+                <td>@Html.ValidationMessage("email") </td>
+            </tr>
+            <tr>
+                <td>@Html.Label("Password: ", "password")</td>
+                <td>@Html.Password("password", password,new{placeholder="password"})</td>
+                <td>@Html.ValidationMessage("password")</td>
+            </tr>
+            <tr>
+                <td>@Html.Label("Confirm Password: ", "password1")</td>
+                <td>@Html.Password("password1", password1,new{placeholder="confirm password"}) </td>
+                <td>@Html.ValidationMessage("password1") </td>
+            </tr>
+            <tr>
+                <td><label>Account Type</label></td>
+                <td>
+                    <select tabindex="4">
+                        <option value="1">Admin Account</option>
+                        <option value="2">Employer Account</option>
+                        <option value="3" selected>Student Account</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>

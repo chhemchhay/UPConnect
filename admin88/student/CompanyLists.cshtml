@@ -1,0 +1,140 @@
+﻿@{
+    Layout="~/shared/layout/_studentlayout.cshtml";
+    Page.Title="Admin Page";
+}
+
+@section menu{
+    <ul id="simple-menu">
+        <li><a href="~/admin88/student/default.cshtml"><span>Dashboard</span></a></li>                
+        <li><a href="~/admin88/student/profile.cshtml"><span>Profile</span></a></li>
+        <li><a href="~/admin88/student/companylists.cshtml" class="current"><span>Company</span></a></li>
+        <li><a href="~/admin88/student/support.cshtml"><span>Support</span></a></li>	 				
+    </ul>
+}
+<link href="@Href("../css/table-style.css")" rel="stylesheet"/>
+<div>
+    <div id="header-title">Search Company</div>
+    <div id="box">
+    <select style="height: 35px;width: 168px;">
+        <option value="volvo">Accounting</option>
+        <option value="saab">Management</option>
+        <option value="mercedes">IT / Design</option>
+        <option value="audi">Marketing</option>
+    </select>
+        <input id="Text1" type="text" style="height:35px;width:168px;margin-right:10px;"/><input id="Submit1" type="submit" value="submit" />
+    </div>
+</div>
+
+<table>
+	<caption><h2>Company Lists</h2></caption>
+	<thead>
+	<tr class="odd">
+		<td class="column1"></td>
+		<th scope="col">Company Name</th>
+		<th scope="col">Company Type</th>	
+		<th scope="col">Contact Person</th>
+		<th scope="col">Phone</th>
+        <th scope="col">Email</th>
+        <th scope="col">Website</th>
+	</tr>	
+	</thead>
+   
+	<tbody>
+ 	<tr>
+		<th scope="row" class="column1">1</th>
+		<td><a href="#">Golden Star Corporate Development (Cambodia) Ltd</a></td>
+		<td>Entertainment Industry</td>
+		<td>Jonh Lee</td>
+		<td>012345678</td>
+        <td>Jonhlee@gmail.com</td>
+        <td><a href="GSC.com.kh">GSC.com.kh</a></td>
+	</tr>	
+ 	 <tr>
+		<th scope="row" class="column1">2</th>
+		<td>Golden Star Corporate Development (Cambodia) Ltd</td>
+		<td>Entertainment Industry</td>
+		<td>Jonh Lee</td>
+		<td>012345678</td>
+        <td>Jonhlee@gmail.com</td>
+        <td>GSC.com.kh</td>
+	</tr>	
+ 	<tr>
+		<th scope="row" class="column1">3</th>
+		<td>Golden Star Corporate Development (Cambodia) Ltd</td>
+		<td>Entertainment Industry</td>
+		<td>Jonh Lee</td>
+		<td>012345678</td>
+        <td>Jonhlee@gmail.com</td>
+        <td>GSC.com.kh</td>
+	</tr>
+    <tr>
+		<th scope="row" class="column1">4</th>
+		<td>Golden Star Corporate Development (Cambodia) Ltd</td>
+		<td>Entertainment Industry</td>
+		<td>Jonh Lee</td>
+		<td>012345678</td>
+        <td>Jonhlee@gmail.com</td>
+        <td>GSC.com.kh</td>
+	</tr>
+    <tr>
+		<th scope="row" class="column1">5</th>
+		<td>Golden Star Corporate Development (Cambodia) Ltd</td>
+		<td>Entertainment Industry</td>
+		<td>Jonh Lee</td>
+		<td>012345678</td>
+        <td>Jonhlee@gmail.com</td>
+        <td>GSC.com.kh</td>
+	</tr>
+    <tr>
+		<th scope="row" class="column1">6</th>
+		<td>Golden Star Corporate Development (Cambodia) Ltd</td>
+		<td>Entertainment Industry</td>
+		<td>Jonh Lee</td>
+		<td>012345678</td>
+        <td>Jonhlee@gmail.com</td>
+        <td>GSC.com.kh</td>
+	</tr>
+    <tr>
+		<th scope="row" class="column1">7</th>
+		<td>Golden Star Corporate Development (Cambodia) Ltd</td>
+		<td>Entertainment Industry</td>
+		<td>Jonh Lee</td>
+		<td>012345678</td>
+        <td>Jonhlee@gmail.com</td>
+        <td>GSC.com.kh</td>
+	</tr>
+    <tr>
+		<th scope="row" class="column1">8</th>
+		<td>Golden Star Corporate Development (Cambodia) Ltd</td>
+		<td>Entertainment Industry</td>
+		<td>Jonh Lee</td>
+		<td>012345678</td>
+        <td>Jonhlee@gmail.com</td>
+        <td>GSC.com.kh</td>
+	</tr>
+    <tr>
+		<th scope="row" class="column1">9</th>
+		<td>Golden Star Corporate Development (Cambodia) Ltd</td>
+		<td>Entertainment Industry</td>
+		<td>Jonh Lee</td>
+		<td>012345678</td>
+        <td>Jonhlee@gmail.com</td>
+        <td>GSC.com.kh</td>
+	</tr>
+    <tr>
+		<th scope="row" class="column1">10</th>
+		<td>Golden Star Corporate Development (Cambodia) Ltd</td>
+		<td>Entertainment Industry</td>
+		<td>Jonh Lee</td>
+		<td>012345678</td>
+        <td>Jonhlee@gmail.com</td>
+        <td>GSC.com.kh</td>
+	</tr>
+	</tbody>
+
+    <tfoot>	
+ 	<tr class="odd">
+		<td class="column1" colspan="7">&nbsp;</td>
+	</tr>	
+	</tfoot>
+</table>

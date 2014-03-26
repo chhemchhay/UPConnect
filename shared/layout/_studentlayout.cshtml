@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+        <title>Welcome to - @Page.Title</title>
+        <link href="@Href("~/admin88/css/admin-style.css")" rel="stylesheet"/>
+        <link href="@Href("~/admin88/css/menu-style.css")" rel="stylesheet"/>
+        <link rel="shortcut icon" href="~/shared/images/favicon.ico">
+        @RenderSection("head",required:false)
+  </head>
+  <body>
+	<div id="wrapper">
+        <div class="header" >       
+            <div class="content">
+                <img alt="logo" src="~/shared/images/up-connect-logo.png" class="logo"/>            
+                <div class="account-summary" style="float: right;">@MemberShipHelpers.AccountSummary()
+                </div>
+            </div>
+        </div>
+        <div class="nav-top-menu">
+            <div class="content">   
+                <div id="left-menu">
+                  @RenderSection("menu")
+                </div>
+                <div id="right-menu">
+                    <a href="login.html" title="Logout"><div id="logout-icon"></div></a>                
+                    <a href="login.html" title="Change Password"><div id="change-pwd-icon"></div></a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-body">
+                
+                <div id="middle-box">
+                    <div id="left-box">
+                        <div id="profile-pic-box">
+                            <div id="header-title">Chea Signhatarareaksmey</div>
+                            <div id="imageHolder">
+                                <img alt="picture profile" src="~/admin88/images/profile/user-profile-pic.jpg"/>
+                            </div>
+                            <input id="Submit3" type="submit" value="Change Profile Picture" style="width:200px;" />
+                        </div>
+
+                        <ul id="nav-menu-left">
+                            <li><a href="personal-details.html" class="current">Personal Info</a></li>
+                            <li><a href="contact-details.html">Education Info</a></li>
+                            <li><a href="parental-details.html">Employment Experience</a></li>
+                            <li><a href="education-details.html">Volunteer Experience</a></li>
+                            <li><a href="#">Language</a></li>
+                            <li><a href="#">Other Training & Skills</a></li>
+                            <li><a href="#">Reference</a></li>
+                            <li><a href="#">Create CV</a></li>
+                        </ul>
+                    </div>
+                    <div id="right-box">
+                        @RenderBody() 
+                    </div>
+                </div>
+  
+            </div>
+        </div>    
+        <div class="footer">
+            <div class="content" id="footer-content">
+                <img alt="logo" src="~/shared/images/up-power-by-logo.png" width="25px" />
+                <span id="copyright">Copyright 2014 University of Puthisastra</span>
+            </div>
+        </div>             
+    </div>
+  </body>
+</html>
+
