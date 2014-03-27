@@ -1,6 +1,6 @@
 ﻿@{
-    Layout="~/shared/layout/_adminlayout.cshtml";
-    Page.Title="ForgotPassword Page";
+    Layout="~/shared/layout/_helplayout.cshtml";
+    Page.Title="ChangePassword Page";
 }
 
 @section menu{
@@ -9,8 +9,8 @@
         <li><a href="~/admin88/admin/employers.cshtml"><span>Employers</span></a></li>
         <li><a href="~/admin88/admin/students.cshtml"><span>Students</span></a></li>
         <li><a href="~/admin88/admin/membership.cshtml"><span>Membership</span></a></li>
-        <li><a href="~/admin88/admin/help.cshtml"><span>Help</span></a></li>	 				
+        <li><a href="~/admin88/admin/help.cshtml" class="current"><span>Help</span></a></li>	 				
     </ul>
 }
 
-@RenderPage("~/shared/partial/_forgotpassword.cshtml")
+@RenderPage("~/shared/partial/_help.cshtml")

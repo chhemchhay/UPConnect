@@ -1,12 +1,12 @@
 ﻿@{
     Layout="~/shared/layout/_adminlayout.cshtml";
-    Page.Title="Admin Page";
+    Page.Title="Membership Page";
 }
 
 @section menu{
     <ul id="simple-menu">
-        <li><a href="~/admin88/admin/default.cshtml" class="current"><span>Dashboard</span></a></li>                
-        <li><a href="~/admin88/admin/employers.cshtml"><span>Employers</span></a></li>
+        <li><a href="~/admin88/admin/default.cshtml"><span>Dashboard</span></a></li>                
+        <li><a href="~/admin88/admin/employers.cshtml" class="current"><span>Employers</span></a></li>
         <li><a href="~/admin88/admin/students.cshtml"><span>Students</span></a></li>
         <li><a href="~/admin88/admin/membership.cshtml"><span>Membership</span></a></li>
         <li><a href="~/admin88/admin/help.cshtml"><span>Help</span></a></li>	 				
@@ -172,114 +172,87 @@ table {
   
 </style>
 <div class="toolbar" style="margin-bottom: 5px;">
-        <input style="float: left" id="membername" type="text" placeholder="job title"/>
-        <select tabindex="4" style="float: left">
-            <option value="0" selected>All Categories</option>
-            <option value="1">Category A</option>
-            <option value="2">Category B</option>
-            <option value="3">Category C</option>
-        </select>
-        <select tabindex="4" style="float: left">
-            <option value="0" selected>All Companies</option>
-            <option value="1">Company A</option>
-            <option value="2">Company B</option>
-            <option value="3">Company C</option>
-        </select>
-        <select tabindex="4" style="float: left">
-            <option value="0" selected>All</option>
-            <option value="1">Published</option>
-            <option value="2">Unpublished</option>
-        </select>
+        <input style="float: left" id="membername" type="text" placeholder="username"/>
         <input style="float: left" class="btn" type="submit" tabindex="5" value="Search" />
     
+    <a href="register.cshtml"><input class="btn" type="submit" tabindex="5" value="Add New Users" /> </a>
 </div>
     
 <table class="bordered">
             <thead>
             <tr>
                 <th>Nº</th>        
-                <th>Job Title</th>
-                <th>Type</th>
-                <th>Company</th>
-                <th>Published</th>
+                <th>Username</th>
+                <th>Company Name</th>
+                <th>Created Date</th>
             </tr>
             </thead>
             <tr>
                 <td>1</td>        
-                <td><a title="Edit The Shawshank Redemption" href="register">The Shawshank Redemption</a></td>
-                <td>Administration</td>
-                <td>Company C</td>
-                <td>Yes</td>
+                <td><a title="Edit The Shawshank Redemption" href="register">john@hotmail.com</a></td>
+                <td><a title="View the company detail" href="companydetail">john Company</a></td>
+                <td>20/03/2014</td>
             </tr>        
             <tr>
                 <td>2</td>         
-                <td>The Godfather</td>
-                <td>Financial</td>
-                <td>Company C</td>
-                <td>Yes</td>
+                <td>johnathan@hotmail.com</td>
+                <td>johnathan Company</td>
+                <td>20/03/2014</td>
             </tr>
             <tr>
 
                 <td>3</td>         
-                <td>The Godfather: Part II</td>
-                <td>IT Engineer</td>
-                <td>Company A</td>
-                <td>Yes</td>
+                <td>johna@hotmail.com</td>
+                <td>johna Company</td>
+                <td>20/03/2014</td>
             </tr>    
             <tr>
                 <td>4</td> 
-                <td>The Good, the Bad and the Ugly</td>
-                <td>Entertainment</td>
-                <td>Company A</td>
-                <td>Yes</td>
+                <td>johny@hotmail.com</td>
+                <td>johny Company</td>
+                <td>20/03/2014</td>
 
             </tr>
             <tr>
                 <td>5</td> 
-                <td>Pulp Fiction</td>
-                <td>Entertainment</td>
-                <td>Company A</td>
-                <td>No</td>
+                <td>johanson@hotmail.com</td>
+                <td>johanson Company</td>
+                <td>20/03/2014</td>
             </tr>
             <tr>
                 <td>6</td> 
-                <td>12 Angry Men</td>
-                <td>Entertainment</td>
-                <td>Company A</td>
-                <td>No</td>
+                <td>jonan@hotmail.com</td>
+                <td>jonan Company</td>
+                <td>20/03/2014</td>
             </tr>
             <tr>
                 <td>7</td> 
-                <td>Schindler's List</td>
-                <td>Entertainment</td>
-                <td>Company A</td>
-                <td>No</td>
+                <td>jame@hotmail.com</td>
+                <td>jame Company</td>
+                <td>20/03/2014</td>
             </tr>    
             <tr>
 
                 <td>8</td> 
-                <td>One Flew Over the Cuckoo's Nest</td>
-                <td>Entertainment</td>
-                <td>Company A</td>
-                <td>No</td>
+                <td>janny@hotmail.com</td>
+                <td>janny Company</td>
+                <td>20/03/2014</td>
             </tr>
             <tr>
                 <td>9</td> 
-                <td>The Dark Knight</td>
-                <td>Entertainment</td>
-                <td>Company A</td>
-                <td>No</td>
+                <td>jammy@hotmail.com</td>
+                <td>jammy Company</td>
+                <td>20/03/2014</td>
             </tr>
             <tr>
                 <td>10</td> 
-                <td>The Lord of the Rings: The Return of the King</td>
-                <td>Entertainment</td>
-                <td>Company A</td>
-                <td>No</td>
-            </tr> 
+                <td>jammy@hotmail.com</td>
+                <td>jammy Company</td>
+                <td>20/03/2014</td>
+            </tr>
             <tfoot>
                 <tr>
-                    <th colspan="5" style="text-align: center;padding: 5px;">
+                    <th colspan="4" style="text-align: center;padding: 5px;">
                         <span style="padding: 5px;border: solid 1px gray;"><a href="#"><<</a></span>    
                         <span style="padding: 5px;border: solid 1px gray;"><a href="#">1</a></span> 
                         <span style="padding: 5px;border: solid 1px gray;"><a href="#">2</a></span> 
@@ -291,4 +264,3 @@ table {
             </tfoot>
 
         </table>
-

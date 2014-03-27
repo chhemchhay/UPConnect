@@ -1,0 +1,45 @@
+/*PICTURE PROFILE BOX*/
+#profile-pic-box
+{
+    margin-bottom:20px;
+    overflow: hidden;
+}
+
+#header-title
+{
+    background: #f3f3f3 url(~/admin88/images/nav-bg-gold.png) left bottom repeat-x;
+    font-size: 13px;
+    color: #5d5d5d;
+    font-weight: bold;
+    padding: 9px 15px;
+    line-height: 20px;
+    border: 1px solid #dedede;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;    
+}
+
+#imageHolder
+{
+    height: 200px;
+    width: 198px;
+    text-align: center;
+    border: 1px solid #DEDEDE;
+    border-top: none;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;  
+}
+
+#imageHolder img
+{
+    height:200px;
+    width:198px;
+}
+/*PICTURE PROFILE BOX*/
