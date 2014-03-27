@@ -1,0 +1,54 @@
+body {
+}
+
+.toolbars
+{
+    background: #e2e0e0;    
+    padding: 5px;
+    height: 32px;    
+    border: 1px solid #dedede;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.toolbars input[type="submit"]
+{
+    background-color: #291670;
+    border: 1px solid #808080;
+    color: #fff;
+}
+
+
+.toolbars input[type="submit"]:hover
+{
+    background-color: #d7b570;
+    border: 1px solid #d7b570;
+    color: #fff;    
+}
+
+table
+{
+    width: 100%;
+    font-family: Arial;
+    font-size: 10pt;
+    border: 1px dotted #dedede;        
+}
+
+table .row-header
+{
+    text-align: center;
+    font-weight: bold; 
+    background-color: #c3cfe1;
+    color: #3e3e3e;    
+}
+
+.col-tbl
+{
+    width: 100px;
+    text-align: center;
+}

@@ -2,6 +2,11 @@
     Layout="~/shared/layout/_adminlayout.cshtml";
     Page.Title="Admin Page";
 }
+
+@section head{
+    <link href="~/admin88/css/employer-style.css" rel="stylesheet"/>
+}
+
 @section menu{
     <ul id="simple-menu">
         <li><a href="~/admin88/employer/default.cshtml" class="current"><span>Dashboard</span></a></li>                
@@ -11,4 +16,223 @@
     </ul>
 }
 
-<h1>Employer Page</h1>
+<div class="toolbars">
+    <form>
+        <input id="txtSerch" type="text" placeholder="search..." style="float: left; width: 200px;margin-right: 2px;"/>       
+        <input id="btnSearch" class="btn" type="submit" value="Search" style="float: left;"/>
+        <input id="btnSearch" class="btn" type="submit" value="Publish Job" />
+        <input id="btnSearch" class="btn" type="submit" value="Add Job"/>
+    </form>
+</div>
+
+<div id="header-title">Job Announcement</div>
+<div>
+    <table rules="all">
+        <tr class="row-header">
+            <td>
+                Job Title</td>
+            <td class="col-tbl">
+                Location</td>
+            <td class="col-tbl">
+                Publish Date</td>
+            <td class="col-tbl">
+                Closing Date</td>
+            <td class="col-tbl">
+                Tools</td>
+        </tr>
+        <tr>
+            <td>
+                Software Developer and IT Trainee
+            </td>
+            <td class="col-tbl">
+                Phnom Penh
+            </td>
+            <td class="col-tbl">
+                27-03-2014
+            </td>
+            <td class="col-tbl">
+                30-04-2014</td>
+            <td class="col-tbl">
+                <a href="">Edit</a> | <a href="">Delete</a></td>
+        </tr>
+        <tr>
+            <td>
+                IT Assistant 
+            </td>
+            <td class="col-tbl">
+                Phnom Penh
+            </td>
+            <td class="col-tbl">
+                27-03-2014
+            </td>
+            <td class="col-tbl">
+                15-05-2014</td>
+            <td class="col-tbl">
+                <a href="">Edit</a> | <a href="">Delete</a></td>
+        </tr>
+        <tr>
+            <td>
+                IT Assistant 
+            </td>
+            <td class="col-tbl">
+                Phnom Penh
+            </td>
+            <td class="col-tbl">
+                15-02-2014
+            </td>
+            <td class="col-tbl">
+                27-03-2014</td>
+            <td class="col-tbl">
+                <a href="">Edit</a> | <a href="">Delete</a></td>
+        </tr>
+        <tr>
+            <td>
+                IT Assistant 
+            </td>
+            <td class="col-tbl">
+                Phnom Penh
+            </td>
+            <td class="col-tbl">
+                15-02-2014
+            </td>
+            <td class="col-tbl">
+                27-03-2014</td>
+            <td class="col-tbl">
+                <a href="">Edit</a> | <a href="">Delete</a></td>
+        </tr>
+        <tr>
+            <td>
+                Administration & Accounts Officer and Career
+            </td>
+            <td class="col-tbl">
+                Phnom Penh
+            </td>
+            <td class="col-tbl">
+                15-02-2014
+            </td>
+            <td class="col-tbl">
+                27-03-2014</td>
+            <td class="col-tbl">
+                <a href="">Edit</a> | <a href="">Delete</a></td>
+        </tr>
+        <tr>
+            <td>
+                Employment Training Program Coordinator 
+            </td>
+            <td class="col-tbl">
+                Phnom Penh
+            </td>
+            <td class="col-tbl">
+                15-02-2014
+            </td>
+            <td class="col-tbl">
+                27-03-2014</td>
+            <td class="col-tbl">
+                <a href="">Edit</a> | <a href="">Delete</a></td>
+        </tr>
+        <tr>
+            <td>
+                Accountant 
+            </td>
+            <td class="col-tbl">
+                Phnom Penh
+            </td>
+            <td class="col-tbl">
+                15-02-2014
+            </td>
+            <td class="col-tbl">
+                27-03-2014</td>
+            <td class="col-tbl">
+                <a href="">Edit</a> | <a href="">Delete</a></td>
+        </tr><tr>
+            <td>
+                Field Facilitator 
+            </td>
+            <td class="col-tbl">
+                Phnom Penh
+            </td>
+            <td class="col-tbl">
+                15-02-2014
+            </td>
+            <td class="col-tbl">
+                27-03-2014</td>
+            <td class="col-tbl">
+                <a href="">Edit</a> | <a href="">Delete</a></td>
+        </tr>
+        <tr>
+            <td>
+                Service Manager 
+            </td>
+            <td class="col-tbl">
+                Phnom Penh
+            </td>
+            <td class="col-tbl">
+                15-02-2014
+            </td>
+            <td class="col-tbl">
+                27-03-2014</td>
+            <td class="col-tbl">
+                <a href="">Edit</a> | <a href="">Delete</a></td>
+        </tr>
+        <tr>
+            <td>
+                Medical Representative 
+            </td>
+            <td class="col-tbl">
+                Phnom Penh
+            </td>
+            <td class="col-tbl">
+                15-02-2014
+            </td>
+            <td class="col-tbl">
+                27-03-2014</td>
+            <td class="col-tbl">
+                <a href="">Edit</a> | <a href="">Delete</a></td>
+        </tr>
+        <tr>
+            <td>
+                Branch Manager 
+            </td>
+            <td class="col-tbl">
+                Phnom Penh
+            </td>
+            <td class="col-tbl">
+                15-02-2014
+            </td>
+            <td class="col-tbl">
+                27-03-2014</td>
+            <td class="col-tbl">
+                <a href="">Edit</a> | <a href="">Delete</a></td>
+        </tr>
+        <tr>
+            <td>
+                Area Sales Manager-Consumer 
+            </td>
+            <td class="col-tbl">
+                Phnom Penh
+            </td>
+            <td class="col-tbl">
+                15-02-2014
+            </td>
+            <td class="col-tbl">
+                27-03-2014</td>
+            <td class="col-tbl">
+                <a href="">Edit</a> | <a href="">Delete</a></td>
+        </tr>
+        <tr>
+            <td>
+                Product Executive- FMCG 
+            </td>
+            <td class="col-tbl">
+                Phnom Penh
+            </td>
+            <td class="col-tbl">
+                15-02-2014
+            </td>
+            <td class="col-tbl">
+                27-03-2014</td>
+            <td class="col-tbl">
+                <a href="">Edit</a> | <a href="">Delete</a></td>
+        </tr>
+    </table>
+</div>
