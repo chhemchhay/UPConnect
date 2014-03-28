@@ -12,7 +12,7 @@
     </ul>
 }
 <link href="@Href("../css/table-style.css")" rel="stylesheet"/>
-<div>
+<div><div class="">
     <div id="header-title">Search Company</div>
     <div id="box">
     <select style="height: 35px;width: 168px;">
@@ -24,16 +24,19 @@
         <input id="Text1" type="text" style="height:35px;width:168px;margin-right:10px;"/><input id="Submit1" type="submit" value="submit" />
     </div>
 </div>
-
-<table>
-	<caption><h2>Company Lists</h2></caption>
+ <div class="">
+        <div id="header-title">
+            <div>Company List</div>
+        </div>
+        <div class="content-wrap" style="padding: 5px;">
+<table class="company-list bordered">
 	<thead>
 	<tr class="odd">
 		<td class="column1"></td>
 		<th scope="col">Company Name</th>
 		<th scope="col">Company Type</th>	
-		<th scope="col">Contact Person</th>
-		<th scope="col">Phone</th>
+		<th scope="col" style="width: 90px;">Contact</th>
+		<th scope="col" style="width: 90px;">Phone</th>
         <th scope="col">Email</th>
         <th scope="col">Website</th>
 	</tr>	
@@ -131,10 +134,7 @@
         <td>GSC.com.kh</td>
 	</tr>
 	</tbody>
-
-    <tfoot>	
- 	<tr class="odd">
-		<td class="column1" colspan="7">&nbsp;</td>
-	</tr>	
-	</tfoot>
 </table>
+</div>
+</div>
+</div>

@@ -1,0 +1,25 @@
+﻿@{
+    Layout="~/shared/layout/_studentlayout.cshtml";
+    Page.Title="Admin Page";
+}
+@section menu{
+    <ul id="simple-menu">
+        <li><a href="~/admin88/student/default.cshtml"><span>Dashboard</span></a></li>                
+        <li><a href="~/admin88/student/profile.cshtml" class="current"><span>Profile</span></a></li>
+        <li><a href="~/admin88/student/companylists.cshtml"><span>Company</span></a></li>
+        <li><a href="~/admin88/student/support.cshtml"><span>Support</span></a></li>	 				
+    </ul>
+}
+<div id="header-title">Personal Information</div>
+                <div id="box" style="padding: 0;">
+                    <ul class="info">
+                    <li class=""><span class="Info-Field">Name</span><input id="Text1" type="text" class="Info-Control"/></li>
+                    <li class=""><span class="Info-Field">Telephone</span><input id="Text1" type="text" class="Info-Control"/></li>
+                    <li class=""><span class="Info-Field">Emergency Contact</span><input id="Text1" type="text" class="Info-Control"/></li>
+                    <li class=""><span class="Info-Field">Email</span><input id="Text1" type="text" class="Info-Control" /></li>
+                    <li class=""><span class="Info-Field">Date of Birth</span><input type="date" class="Info-Control" name="bday"></li>
+                    <li><input id="Save" class="Save" type="submit" value="Save" /><input id="Cancel" class="Cancel" type="submit" value="Cancel" onclick="parent.$.modal().close()" /></li>
+                    </ul>
+                    <div class="Action">
+                    </div>
+</div>

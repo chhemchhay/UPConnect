@@ -1,0 +1,30 @@
+﻿@{
+    Layout="~/shared/layout/_studentlayout.cshtml";
+    Page.Title="Admin Page";
+}
+@section menu{
+    <ul id="simple-menu">
+        <li><a href="~/admin88/student/default.cshtml"><span>Dashboard</span></a></li>                
+        <li><a href="~/admin88/student/profile.cshtml" class="current"><span>Profile</span></a></li>
+        <li><a href="~/admin88/student/companylists.cshtml"><span>Company</span></a></li>
+        <li><a href="~/admin88/student/support.cshtml"><span>Support</span></a></li>	 				
+    </ul>
+}
+<div id="header-title">Language</div>
+                <div id="box" style="padding: 0;">
+                    <ul class="info">
+					    <li><span class="Info-Field">Langauge</span><input id="Text1" type="text" class="Info-Control"/></li>
+                        <li class=""><span class="Info-Field">Level</span>
+                            <select class="Info-Control" style="margin-left: -4px;">
+                                <option value="volvo">Mother Tongue</option>
+                                <option value="saab">Exellent</option>
+                                <option value="mercedes">Good</option>
+                                <option value="audi">Medium</option>
+                            </select>
+                        </li>
+                        <li><input id="Add" class="Add" type="submit" value="Add" /><input id="Save" class="Save" type="submit" value="Save" /><input id="Cancel" class="Cancel" type="submit" value="Cancel" /></li>
+                    </ul>
+                    <div class="Action">
+                    </div>
+
+                </div>

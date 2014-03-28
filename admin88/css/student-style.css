@@ -28,6 +28,7 @@ color: #5d5d5d;
 border-radius: 3px;
 outline: none;
 padding: 4px 6px;
+height: 20px;
 }
 table{
     border-collapse: collapse;
@@ -38,15 +39,35 @@ table{
 box-shadow: 1px 2px 9px 0px rgba(163,163,163,1);
 margin-bottom: 40px;
 }
-.content {
+.col1{
+
+}
+.content-wrap {
+background: #f7f6f6;
+padding: 15px;
+border: 1px solid #dedede;
+border-top: none;
+-moz-border-radius-bottomright: 3px;
+-webkit-border-bottom-right-radius: 3px;
+border-bottom-right-radius: 3px;
+-moz-border-radius-bottomleft: 3px;
+-webkit-border-bottom-left-radius: 3px;
+border-bottom-left-radius: 3px;
+}
+table.bordered tr td{
+background: #fff;
+}
+table.bordered tr th {
+    background: #eee;
 }
 table.bordered tr td,table.bordered tr th{
     border: 1px solid #dedede;
     padding: 0 5px;
 }
-table.joblist tr{height: 45px;}
-table.joblist tr td a:link{cursor:pointer;color: #291670;}
-table.joblist tr td a:hover{color: #c0a063;}
+table tr td{vertical-align: top;}
+table.joblist tr, table.company-list tr{height: 35px;}
+table.joblist tr td a:link, table.company tr td a:link{cursor:pointer;color: #291670;}
+table.joblist tr td a:hover, table.company tr td a:hover{color: #c0a063;}
 table.bordered tr td{font-size: small;}
 .bordered tr th{color: #c0a063; }
 table.bordered{
@@ -86,17 +107,17 @@ border-radius: 2px;
 border-spacing: 0;
 border: 1px solid #dbdbdb;
 }
-table.job-detail{
+table.job-detail, table.company-detail{
     border: 1px solid #dbdbdb;
 }
-table.job-detail th {
+table.job-detail th,table.company-detail tr th {
 font-weight: bold;
 color: #fff;
 width: 120px;
 border-top: 1px solid #dbdbdb;
 background: #c0a063;
 }
-table.job-detail td {
+table.job-detail td,table.company-detail tr td {
 padding-left: 8px;
 border-top: 1px solid #dbdbdb;
 }
@@ -108,4 +129,38 @@ padding-left: 10px;
 }
 table.job-contact tr td, table.job-contact tr th{
     text-align: left;
+}
+table.company-detail tr td, table.company-detail tr th{
+    padding: 0 5px;
+    text-align: left;
+    vertical-align: top;
+}
+/*STUDENT PROFILE*/
+ul{list-style-type: none;}
+ul.Info li{line-height: 20px;}
+.Info{list-style-type: none;}
+h4.Info-Header{margin-bottom: 5px;font-size: 14px;color: white;}
+li.Info-Header{line-height: 30px; background: #c0a063;padding-left: 50px;}
+span.Info-Field{font-weight: bold;width: 250px;display: inline-block;}
+.Info-Control{
+   height:35px;
+   width:168px;
+   margin-bottom:5px;
+}
+/*MODAL ACTION*/
+div.modal-action{height: 25px;
+background-color: #f3f3f3;
+padding: 7px 5px 5px 5px;
+width: 764px;
+border: 1px solid #dedede;}
+input.toolbar-button{
+background: #e15a5a;
+color: #fff;
+font-size: 15px;
+padding: 2px 20px;
+border: none;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+margin-right: 4px;
 }

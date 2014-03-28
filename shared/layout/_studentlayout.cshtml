@@ -6,6 +6,7 @@
         <link href="@Href("~/admin88/css/admin-style.css")" rel="stylesheet"/>
         <link href="@Href("~/admin88/css/menu-style.css")" rel="stylesheet"/>
         <link href="~/admin88/css/student-style.css" rel="stylesheet"/>
+        <link href="~/admin88/css/modal-window.css" rel="stylesheet"/>
         <link rel="shortcut icon" href="~/shared/images/favicon.ico">
         @RenderSection("head",required:false)
   </head>
@@ -43,14 +44,14 @@
                         </div>
 
                         <ul id="nav-menu-left">
-                            <li><a href="personal-details.html" class="current">Personal Info</a></li>
-                            <li><a href="contact-details.html">Education Info</a></li>
-                            <li><a href="parental-details.html">Employment Experience</a></li>
-                            <li><a href="education-details.html">Volunteer Experience</a></li>
-                            <li><a href="#">Language</a></li>
-                            <li><a href="#">Other Training & Skills</a></li>
-                            <li><a href="#">Reference</a></li>
-                            <li><a href="#">Create CV</a></li>
+                    <li><a href="personal-info.cshtml">Personal Info</a></li>
+                    <li><a href="education-info.cshtml">Education Info</a></li>
+                    <li><a href="employment-xp.cshtml">Employment Experience</a></li>
+                    <li><a href="volunteer-xp.cshtml">Volunteer Experience</a></li>
+                    <li><a href="language.cshtml">Language</a></li>
+                    <li><a href="training.cshtml">Other Training & Skills</a></li>
+                    <li><a href="reference.cshtml">Reference</a></li>
+                    <li><a href="generate-cv.cshtml">Create CV</a></li>
                         </ul>
                     </div>
                     <div id="right-box">
@@ -67,6 +68,8 @@
             </div>
         </div>             
     </div>
+    <script type="text/javascript" language="javascript" src="~/admin88/js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" language="javascript" src="~/admin88/js/modal-window.min.js"></script>
   </body>
 </html>
 
