@@ -3,8 +3,8 @@ body {
 
 .toolbars
 {
-    background-color: #d8e4f3;
-    border: 1px solid #99bce8;
+    background-color: #37257b;
+    border: 1px solid #291670;
     padding: 5px;
     height: 32px;        
     -moz-border-radius: 3px;
@@ -14,6 +14,12 @@ body {
     -webkit-border-radius: 3px;
     border-radius: 3px;
     margin-bottom: 15px;
+}
+
+.btn
+{
+    width: 80px;
+    margin-left: 5px;
 }
 
 .toolbars input[type="submit"]
@@ -55,11 +61,39 @@ table .row-header
     text-align: center;
 }
 
+.fullname
+{
+    padding-left: 10px;    
+}
+
+tr:hover
+{
+    background-color: #d7b570;
+}
+
+.fullname a
+{
+    color: #666;
+}
+
+.fullname a:hover
+{
+    color: #291670;
+}
+
+.email
+{
+    width: 220px;
+    padding-left: 10px;
+}
+
+
+
 .pagination
 {
     height: 40px;
-    background-color: #d8e4f3;
-    border: 1px solid #99bce8;
+    background-color: #37257b;
+    border: 1px solid #291670;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -70,9 +104,21 @@ table .row-header
     line-height: 40px;
     padding-left: 10px;
     font-size: 10pt;
+    color: #fff;
 }
 
 .pagination select
 {
     width: 100px;margin-right: 20px;height: 27px;margin-top: 7px;
+}
+
+.frm-job-registor ul
+{
+    float: left;width: 100px;list-style: none;
+}
+
+.frm-job-registor li
+{
+    height: 35px;
+    line-height: 35px;
 }

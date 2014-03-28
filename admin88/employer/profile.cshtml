@@ -1,0 +1,24 @@
+﻿@{
+    Layout="~/shared/layout/_adminlayout.cshtml";
+    Page.Title="Admin Page";
+}
+
+@section head{
+    <link href="~/admin88/css/employer-style.css" rel="stylesheet"/>
+}
+
+@section menu{
+    <ul id="simple-menu">
+        <li><a href="~/admin88/employer/default.cshtml" class="current"><span>Dashboard</span></a></li>                
+        <li><a href="~/admin88/employer/profile.cshtml"><span>Profile</span></a></li>
+        <li><a href="~/admin88/employer/studentlists.cshtml"><span>Student</span></a></li>
+        <li><a href="~/admin88/employer/support.cshtml"><span>Support</span></a></li>	   				
+    </ul>
+}
+
+<div class="toolbars">
+    <form>
+        <input id="btnSearch" class="btn" type="submit" value="Cancel" />
+        <input id="btnSearch" class="btn" type="submit" value="Save"/>
+    </form>
+</div>

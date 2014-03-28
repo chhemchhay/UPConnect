@@ -25,30 +25,92 @@
     </form>
 </div>
 <div id="header-title">Job Register Form</div>
-<div id="box" style="font-size: 10pt;">
+<div id="box" class="frm-job-registor" style="font-size: 10pt;">
     <form>
-        <label>Job Title:</label>
-        <input id="txtJobTitle" type="text" placeholder="Input job title..."/><br/>
-        <label>Function:</label>
-        <input id="txtFunction" type="text" placeholder="Input job function..."/><br/>
-        <label>Location:</label>
-        <input id="txtJobLocation" type="text" placeholder="Input job location title..."/><br/>
-        <label>Salary:</label>
-        <input id="txtSalary" type="text" placeholder="Input salary..."/><br/>
-        <label>Language:</label>
-        <input id="txtLanguage" type="text" placeholder="Input language..."/><br/>
-
-        <label>Age:</label>
-        <input id="txtAge" type="text" placeholder="Input age..."/><br/>
-        <label>Gender:</label>
-        <select id="SelectGender">
-            <option>Male</option>
-            <option>Female</option>
-        </select><br/>
-
-        <label>Publish Date:</label>
-        <input id="txtLanguage" type="text" placeholder="Input publish date..."/><br/>
-        <label>Closing Date:</label>
-        <input id="txtLanguage" type="text" placeholder="Input closing date..."/>
+        <div style="float: left;width: 50%;">
+            <ul style="width: 100px;">
+                <li>Job Title</li>
+                <li>Location</li>
+                <li>Language</li>
+                <li>Salary</li>
+                <li>Job Term</li>
+                <li>Job Function</li>                
+                <li>Requriment</li>
+            </ul>
+            <ul style="width: 170px;">
+                <li><input id="txtJobTitle" type="text" placeholder="input job title..."/></li>
+                <li>
+                    <select style="width: 162px;">
+                        <option>N/A</option>
+                        <option>Phnom Penh</option>
+                        <option>Pursat</option>
+                    </select>
+                </li>
+                <li><input id="txtLanguage" type="text" placeholder="input language..."/></li>
+                <li><input id="txtSalary" type="text" placeholder="input salary..."/></li>
+                <li><input id="txtJobTerm" type="text" placeholder="input job term..."/></li>
+                <li>
+                    <select style="width: 162px;">
+                        <option>N/A</option>
+                        <option>Officer</option>
+                        <option>Supervisor</option>
+                        <option>Manager</option>
+                    </select>
+                </li>
+                <li>
+                    <textarea id="txtRequriement" placeholder="input job requriement..."></textarea>
+                </li>
+            </ul>
+            
+        </div>
+        <div style="float: left;width: 50%;">
+            <ul style="width: 100px;">
+                <li>Job Qualification</li>
+                <li>Age</li>
+                <li>Gender</li>
+                <li>Industry</li>
+                <li>Experience</li>                                
+                <li>Job Category</li>              
+                <li>Description</li>  
+            </ul>
+            <ul style="width: 170px;">
+                <li>
+                    <select style="width: 162px;">
+                        <option>N/A</option>
+                        <option>Hight School</option>
+                        <option>Bachelor</option>
+                        <option>Master</option>
+                        <option>Doctor</option>
+                    </select>
+                </li>
+                <li><input id="txtAge" type="text" placeholder="input age..."/></li>
+                <li>
+                    <select style="width: 162px;">
+                        <option>N/A</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </li>
+                <li>
+                    <select style="width: 162px;">
+                        <option>N/A</option>
+                        <option>Industry 1</option>
+                        <option>Industry 2</option>
+                        <option>Industry 3</option>
+                    </select>
+                </li>
+                <li><input id="txtExp" type="text" placeholder="input experience..."/></li>                                
+                <li>
+                    <select style="width: 162px;">
+                        <option>N/A</option>
+                        <option>Service</option>
+                        <option>Accounting</option>                        
+                        <option>Administration</option>
+                        <option>. . . . . . . . . . .</option>
+                    </select>
+                </li>
+                <li><textarea id="txtDescription" placeholder="input job description..."></textarea></li>
+            </ul>
+        </div>
     </form>
 </div>
