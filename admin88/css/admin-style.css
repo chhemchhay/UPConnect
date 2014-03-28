@@ -13,7 +13,7 @@
         position: relative;
         margin: 0 auto;
     }
-    .content-body{height: 470px;}
+    .content-body{}
 
     body {
         font-family: "Lato", Helvetica, Arial, sans-serif;
@@ -31,7 +31,7 @@
         margin: 0 auto;
         
     }
-    .content-body{height: 570px;}
+    .content-body{}
 
     body {
         font-family: "Lato", Helvetica, Arial, sans-serif;
@@ -47,7 +47,7 @@
         position: relative;
         margin: 0 auto;
     }
-    .content-body{height: 770px;}
+    .content-body{}
 
     body {
         font-family: "Lato", Helvetica, Arial, sans-serif;

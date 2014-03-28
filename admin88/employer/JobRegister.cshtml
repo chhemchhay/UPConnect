@@ -1,0 +1,54 @@
+﻿@{
+    Layout="~/shared/layout/_adminlayout.cshtml";
+    Page.Title="Admin Page";
+}
+
+@section head{
+    <link href="~/admin88/css/employer-style.css" rel="stylesheet"/>
+}
+
+@section menu{
+    <ul id="simple-menu">
+        <li><a href="~/admin88/employer/default.cshtml" class="current"><span>Dashboard</span></a></li>                
+        <li><a href="~/admin88/employer/profile.cshtml"><span>Profile</span></a></li>
+        <li><a href="~/admin88/employer/studentlists.cshtml"><span>Student</span></a></li>
+        <li><a href="~/admin88/employer/support.cshtml"><span>Support</span></a></li>	   				
+    </ul>
+}
+
+<div class="toolbars">
+    <form>
+        <input id="txtSerch" type="text" placeholder="search..." style="float: left; width: 200px;margin-right: 2px;"/>       
+        <input id="btnSearch" class="btn" type="submit" value="Search" style="float: left;"/>
+        <input id="btnSearch" class="btn" type="submit" value="Cancel" />
+        <input id="btnSearch" class="btn" type="submit" value="Save"/>
+    </form>
+</div>
+<div id="header-title">Job Register Form</div>
+<div id="box" style="font-size: 10pt;">
+    <form>
+        <label>Job Title:</label>
+        <input id="txtJobTitle" type="text" placeholder="Input job title..."/><br/>
+        <label>Function:</label>
+        <input id="txtFunction" type="text" placeholder="Input job function..."/><br/>
+        <label>Location:</label>
+        <input id="txtJobLocation" type="text" placeholder="Input job location title..."/><br/>
+        <label>Salary:</label>
+        <input id="txtSalary" type="text" placeholder="Input salary..."/><br/>
+        <label>Language:</label>
+        <input id="txtLanguage" type="text" placeholder="Input language..."/><br/>
+
+        <label>Age:</label>
+        <input id="txtAge" type="text" placeholder="Input age..."/><br/>
+        <label>Gender:</label>
+        <select id="SelectGender">
+            <option>Male</option>
+            <option>Female</option>
+        </select><br/>
+
+        <label>Publish Date:</label>
+        <input id="txtLanguage" type="text" placeholder="Input publish date..."/><br/>
+        <label>Closing Date:</label>
+        <input id="txtLanguage" type="text" placeholder="Input closing date..."/>
+    </form>
+</div>
