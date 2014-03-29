@@ -10,16 +10,32 @@
         <li><a href="~/admin88/student/support.cshtml"><span>Support</span></a></li>	 				
     </ul>
 }
-<div id="header-title">Other Training & Skill</div>
-                <div id="box" style="padding: 0;">
-                    <ul class="info">
-					    <li><span class="Info-Field">Institution</span><input id="Text1" type="text" class="Info-Control"/></li>
-                        <li class=""><span class="Info-Field">From</span><input id="Text1" type="date" class="Info-Control"/><span class="Info-Field" style="margin-left: 10px;width: 30px;">To</span><input id="Text1" type="date" class="Info-Control"/></li>
-                        <li class=""><span class="Info-Field">Description</span></li>
-                        <li><textarea rows="4" cols="50"></textarea></li>
-                        <li><input id="Add" class="Add" type="submit" value="Add" /><input id="Save" class="Save" type="submit" value="Save" /><input id="Cancel" class="Cancel" type="submit" value="Cancel" /></li>
-                    </ul>
-                    <div class="Action">
-                    </div>
-
-                </div>
+<div id="header-title" style="overflow: auto;">
+    <span class="section-title">Other Training & Skill</span>
+    <span class="section-control">
+    <a href="edit/training.cshtml" class="button">Add</a></span>
+</div>
+<table style="width: 100%;"><tbody>
+                        <tr>
+                            <th scope="Row">Institute</th>
+                            <th scope="Row">Skills / Achievement</th>
+                            <th scope="Row">From</th>
+                            <th scope="Row">To</th>
+                            <th style="width: 85px;"></th>
+                        </tr>
+                        <tr>
+                            <td>TK Technology Institue</td>
+                            <td>Network Administration</td>
+                            <td>2002</td>
+                            <td>2004</td>
+                            <td><a href="#" class="edit">Edit</a> | <a href="#" class="">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>DIY Training Center</td>
+                            <td>Database Administration</td>
+                            <td>2000</td>
+                            <td>2002</td>
+                            <td><a href="#" class="edit">Edit</a> | <a href="#" class="">Delete</a></td>
+                        </tr>
+                    </tbody>
+</table>

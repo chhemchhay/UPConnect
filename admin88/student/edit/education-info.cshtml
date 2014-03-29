@@ -1,0 +1,46 @@
+﻿@{
+    Layout="~/shared/layout/_studentlayout.cshtml";
+    Page.Title="Admin Page";
+}
+@section menu{
+    <ul id="simple-menu">
+        <li><a href="~/admin88/student/default.cshtml"><span>Dashboard</span></a></li>                
+        <li><a href="~/admin88/student/profile.cshtml" class="current"><span>Profile</span></a></li>
+        <li><a href="~/admin88/student/companylists.cshtml"><span>Company</span></a></li>
+        <li><a href="~/admin88/student/support.cshtml"><span>Support</span></a></li>	 				
+    </ul>
+}
+<div id="header-title" style="overflow: auto;">
+    <span class="section-title">Employment Experience</span>
+    <span class="section-control">
+        <a href="#" class="button">Save</a>
+        <a href="#" class="button">Save & New</a>
+        <a href="#" class="button">Save & Close</a>
+        <a href="#" class="button">Cancel</a></span></span>
+    </span>
+</div>
+                <div id="box" style="padding: 20px;overflow: hidden;">
+                    <ul class="info">
+					    <li><span class="Info-Field">Institution</span><input id="Text1" type="text" class="Info-Control"/></li>
+                        <li class=""><span class="Info-Field">Qualification</span>
+                            <select class="Info-Control" style="margin-left: -4px;">
+                                <option value="volvo">Master</option>
+                                <option value="saab">Bachelor</option>
+                                <option value="mercedes">K12</option>
+                                <option value="audi">Secondary</option>
+                            </select>
+                        </li>
+                        <li class=""><span class="Info-Field">From</span><input id="Text1" type="date" class="Info-Control"/><span class="Info-Field" style="margin-left: 10px;width: 30px;">To</span><input id="Text1" type="date" class="Info-Control"/></li>
+                        <li class=""><span class="Info-Field">Major</span>
+                            <select class="Info-Control" style="margin-left: -4px;">
+                                <option value="volvo">Business</option>
+                                <option value="saab">Economics</option>
+                                <option value="mercedes">IT</option>
+                                <option value="audi">Accounting</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <div class="Action">
+                    </div>
+
+                </div>

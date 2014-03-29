@@ -10,10 +10,14 @@
         <li><a href="~/admin88/student/support.cshtml"><span>Support</span></a></li>	 				
     </ul>
 }
-<div id="header-title">Volunteer Experience</div>
-                    <table style="width: 100%;"><tbody>
+<div id="header-title" style="overflow: auto;">
+    <span class="section-title">Volunteer Experience</span>
+    <span class="section-control">
+    <a href="edit/reference.cshtml" class="button">Add</a></span>
+</div>
+<table style="width: 100%;"><tbody>
                         <tr>
-                            <th style="width: 25px;"></th>
+                            <th style="width: 85px;"></th>
                             <th scope="Row">Name</th>
                             <th scope="Row">Company/Organization</th>
                             <th scope="Row">Title</th>
@@ -21,7 +25,7 @@
                             <th scope="Row">Email</th>
                         </tr>
                         <tr>
-                            <td><input type="checkbox"></td>
+                            <td><a href="edit/reference.cshtml" class="edit">Edit</a> | <a href="#" class="">Delete</a></td>
                             <td>Mark Leonard</td>
                             <td>Oppo Technology</td>
                             <td>Chief Executive</td>
@@ -29,11 +33,12 @@
                             <td>ab@gmail.com</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox"></td>
+                            <td><a href="edit/reference.cshtml" class="edit">Edit</a> | <a href="#" class="">Delete</a></td>
                             <td>Mark Leonard</td>
                             <td>Oppo Technology</td>
                             <td>Chief Executive</td>
                             <td>011 555 522</td>
                             <td>ab@gmail.com</td>
                         </tr>
-                    </tbody></table>
+                    </tbody>
+</table>

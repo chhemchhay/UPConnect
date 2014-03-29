@@ -10,25 +10,32 @@
         <li><a href="~/admin88/student/support.cshtml"><span>Support</span></a></li>	 				
     </ul>
 }
-<div id="header-title">Language</div>
-                <div id="box" style="padding: 0;">
-                   <ul class="info">
-					    <li><div class="modal-action"><span class="Info-Field">Khmer</span><span class="Info-Divider"> : </span><span class="Info-Value">Excellent</span><span class="modal-button" style="float: right"><input id="Cancel" class="Delete toolbar-button" type="button" value="Delete" /></span></div>
-					    <li><div class="modal-action"><span class="Info-Field">English</span><span class="Info-Divider"> : </span><span class="Info-Value">Excellent</span><span class="modal-button" style="float: right"><input id="Cancel" class="Delete toolbar-button" type="button" value="Delete" /></span></div>                     
-                   </ul>
-                    <ul class="info">
-					    <li><span class="Info-Field">Langauge</span><input id="Text1" type="text" class="Info-Control"/></li>
-                        <li class=""><span class="Info-Field">Level</span>
-                            <select class="Info-Control" style="margin-left: -4px;">
-                                <option value="volvo">Mother Tongue</option>
-                                <option value="saab">Exellent</option>
-                                <option value="mercedes">Good</option>
-                                <option value="audi">Medium</option>
-                            </select>
-                        </li>
-                        <li><input id="Add" class="Add" type="submit" value="Add" /><input id="Save" class="Save" type="submit" value="Save" /><input id="Cancel" class="Cancel" type="submit" value="Cancel" /></li>
-                    </ul>
-                    <div class="Action">
-                    </div>
-
-                </div>
+<div id="header-title" style="overflow: auto;">
+    <span class="section-title">Language Skills</span>
+    <span class="section-control">
+    <a href="edit/language.cshtml" class="button">Add</a></span>
+</div>
+<table style="width: 100%;"><tbody>
+                        <tr>
+                            <th scope="Row">Language</th>
+                            <th scope="Row">Writing</th>
+                            <th scope="Row">Speaking</th>
+                            <th scope="Row">Listening</th>
+                            <th style="width: 85px;"></th>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td>Good</td>
+                            <td>Good</td>
+                            <td>Excellent</td>
+                            <td><a href="edit/language.cshtml" class="edit">Edit</a> | <a href="#" class="">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>French</td>
+                            <td>Good</td>
+                            <td>Good</td>
+                            <td>Excellent</td>
+                            <td><a href="edit/language.cshtml" class="edit">Edit</a> | <a href="#" class="">Delete</a></td>
+                        </tr>
+                    </tbody>
+</table>

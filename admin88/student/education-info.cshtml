@@ -10,48 +10,35 @@
         <li><a href="~/admin88/student/support.cshtml"><span>Support</span></a></li>	 				
     </ul>
 }
-<div id="header-title">Education Information</div>
-                <div id="box" style="padding: 0;overflow: scroll;">
-                    <ul class="info">
-					    <li><div class="modal-action"><span class="Info-Field" style="float: left;">University of Puthisastra</span><span class="modal-button" style="float: right"><input id="Cancel" class="Delete toolbar-button" type="button" value="Delete" /></span></div>
-                            <ul>
-                                <li class=""><span class="Info-Field">Qualification</span><span class="Info-Divider"> : </span><span class="Info-Value">Bachelor Degree</span></li>
-                                <li class=""><span class="Info-Field">From</span><span class="Info-Divider"> : </span><span class="Info-Value">2009</span><span class="Info-Field" style="margin-left: 10px;width: 80px;">To</span><span class="Info-Divider"> : </span><span class="Info-Value">Present</span></li>
-                                <li class=""><span class="Info-Field">Major</span><span class="Info-Divider"> : </span><span class="Info-Value">IT (Programming)</span></li>
-                            </ul>
-                        </li>
-                     </ul>
-                     <ul class="info">
-					    <li><div class="modal-action"><span class="Info-Field" style="float: left;">University of Puthisastra</span><span class="modal-button" style="float: right"><input id="Cancel" class="Delete toolbar-button" type="button" value="Delete" /></span></div>
-                            <ul>
-                                <li class=""><span class="Info-Field">Qualification</span><span class="Info-Divider"> : </span><span class="Info-Value">Bachelor Degree</span></li>
-                                <li class=""><span class="Info-Field">From</span><span class="Info-Divider"> : </span><span class="Info-Value">2009</span><span class="Info-Field" style="margin-left: 10px;width: 80px;">To</span><span class="Info-Divider"> : </span><span class="Info-Value">Present</span></li>
-                                <li class=""><span class="Info-Field">Major</span><span class="Info-Divider"> : </span><span class="Info-Value">IT (Programming)</span></li>
-                            </ul>
-                        </li>
-                        </ul>
-                    <ul class="info" style="border-top: 1px solid #dedede;padding-top: 10px;">
-					    <li><span class="Info-Field">Institution</span><input id="Text1" type="text" class="Info-Control"/></li>
-                        <li class=""><span class="Info-Field">Qualification</span>
-                            <select class="Info-Control" style="margin-left: -4px;">
-                                <option value="volvo">Master</option>
-                                <option value="saab">Bachelor</option>
-                                <option value="mercedes">K12</option>
-                                <option value="audi">Secondary</option>
-                            </select>
-                        </li>
-                        <li class=""><span class="Info-Field">From</span><input id="Text1" type="date" class="Info-Control"/><span class="Info-Field" style="margin-left: 10px;width: 30px;">To</span><input id="Text1" type="date" class="Info-Control"/></li>
-                        <li class=""><span class="Info-Field">Major</span>
-                            <select class="Info-Control" style="margin-left: -4px;">
-                                <option value="volvo">Business</option>
-                                <option value="saab">Economics</option>
-                                <option value="mercedes">IT</option>
-                                <option value="audi">Accounting</option>
-                            </select>
-                        </li>
-                        <li><input id="Add" class="Add" type="submit" value="Add" /><input id="Save" class="Save" type="submit" value="Save" /><input id="Cancel" class="Cancel" type="button" value="Cancel" /></li>
-                    </ul>
-                    <div class="Action">
-                    </div>
-
-                </div>
+<div id="header-title" style="overflow: auto;">
+    <span class="section-title">Educational Information</span></span>
+    <span class="section-control">
+    <a href="edit/education-info.cshtml" class="button">Add</a></span>
+</div>
+<table style="width: 100%;"><tbody>
+                        <tr>
+                            <th scope="Row">Institute</th>
+                            <th scope="Row">Qualification</th>
+                            <th scope="Row">Major</th>
+                            <th scope="Row">From</th>
+                            <th scope="Row">To</th>
+                            <th style="width: 85px;"></th>
+                        </tr>
+                        <tr>
+                            <td>Oscar Insitution of Technology</td>
+                            <td>Bachelor</td>
+                            <td>IT Networking</td>
+                            <td>2000</td>
+                            <td>2004</td>
+                            <td><a href="edit/education-infocshtml" class="edit">Edit</a> | <a href="#" class="">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>Oscar Insitution of Technology</td>
+                            <td>Bachelor</td>
+                            <td>IT Networking</td>
+                            <td>2000</td>
+                            <td>2004</td>
+                            <td><a href="edit/education-info.cshtml" class="edit">Edit</a> | <a href="#" class="">Delete</a></td>
+                        </tr>
+                    </tbody>
+</table> </div>
