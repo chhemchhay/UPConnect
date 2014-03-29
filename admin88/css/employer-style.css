@@ -122,9 +122,19 @@ tr:hover
     float: left;height: 30px;width: 30px;background-color: #808080;margin-top: 4px;line-height: 30px;text-align: center;background: url('../images/btn_left.png');margin-right: 5px;
 }
 
+.btnPre:hover
+{
+    background: url('../images/btn_left_hover.png');
+}
+
 .btnNext
 {
     float: left;height: 30px;width: 30px;background-color: #808080;margin-top: 4px;margin-right: 5px;line-height: 30px;text-align: center;background: url('../images/btn_right.png');margin-left: 5px;
+}
+
+.btnNext:hover
+{
+    background: url('../images/btn_right_hover.png');
 }
 
 .txtPageNum
